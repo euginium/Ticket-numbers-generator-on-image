@@ -4,7 +4,7 @@ const console = require("console");
 const canvas = createCanvas(3508,2480);
 const ctx = canvas.getContext("2d");
 
-
+let increment = 4;
 let previewEdition = 1;
 let edition1 = 1;
 let edition2 = 2;
@@ -39,10 +39,10 @@ const drawlayer = async () => {
 
     saveLayer(canvas);
     previewEdition++;
-    edition1 = (edition1+4);//increment of 4
-    edition2 = (edition2+4);
-    edition3 = (edition3+4);
-    edition4 = (edition4+4);
+    edition1 = (edition1+increment);//increment of 4
+    edition2 = (edition2+increment);
+    edition3 = (edition3+increment);
+    edition4 = (edition4+increment);
 };
 
 for(let i = 1 ; i <= 45; i++){
